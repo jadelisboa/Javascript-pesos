@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        $peso = prompt("Qual é o seu peso?")
+        $altura = prompt("Qual a sua altura?")
+        $altura2 = $altura * $altura
+        $imc = $peso / $altura2
+
+        //document.write($imc)
+       
+        if ($imc < 18.5) 
+        {
+            document.write("Abaixo do peso") 
+            document.write("<img src = 'imagens/pessoam.jpg'>")
+        }
+        else 
+        {
+            if ($imc < 25) 
+            {
+                document.write("Peso normal")
+                document.write("<img src = 'imagens/pessoan.jpg'>")
+            }
+            else 
+            {
+                if ($imc < 30) 
+                {
+                    document.write("Sobrepeso")
+                    document.write("<img src = 'imagens/pessoagor.jpg'>")
+                }
+                else 
+                {  
+                        document.write("Obesa")
+                        document.write("<img src = 'imagens/pessoao.jpg'>")
+                }
+            }
+        }
+       
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
